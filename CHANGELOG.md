@@ -24,5 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `CODE_OF_CONDUCT.md`
 - Add `LICENSE`
 - Add `README.md`
-- Add WordPress functions
-- Add `style.css`
+- Add theme
+	- Add `functions.php` and `functions` folder
+	- Add `style.css`
