@@ -5,21 +5,23 @@
 	* ========================================
 	*/
 
-if ( ! function_exists( 'wordpress_theme_update_login_style' ) ) :
+if ( ! function_exists( 'wordpress_theme_update_login_styles' ) ) :
 
 /**
-	* Adds custom login CSS and JavaScript
+	* Updates login CSS and JavaScript
 	*/
-function wordpress_theme_update_login_style() {
+function wordpress_theme_update_login_styles() {
 
-	wp_register_style( 'custom_wp_login_css', get_template_directory_uri() . '/css/login/login-style.css' );
-	wp_enqueue_style( 'custom_wp_login_css' );
+	// wp_dequeue_style( 'login' );
 
-	wp_register_script( 'custom_wp_login_js', get_template_directory_uri() . '/js/login/login-script.js', array(), false, $in_footer = true );
-	wp_enqueue_script( 'custom_wp_login_js' );
+	wp_register_style( 'custom_login_style', get_template_directory_uri() . '/css/login/login-style.css' );
+	wp_enqueue_style( 'custom_login_style' );
+
+	wp_register_script( 'custom_login_script', get_template_directory_uri() . '/js/login/login-script.js', array(), false, $in_footer = true );
+	wp_enqueue_script( 'custom_login_script' );
 
 }
-add_action( 'login_enqueue_scripts', 'wordpress_theme_update_login_style' );
+add_action( 'login_enqueue_scripts', 'wordpress_theme_update_login_styles' );
 
 endif;
 

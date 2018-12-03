@@ -22,11 +22,11 @@ The main `functions.php` file loads the following functions from the following f
 	- Remove Emojicons
 	- Update body_class
 - `functions/login-page.php`
-	- Add custom login CSS and JavaScript
+	- Update login CSS and JavaScript
 	- Update Login H1 title
 	- Update Login H1 title hyperlink URL
 - `functions/admin.php`
-	- Update Admin CSS
+	- Update Admin CSS and JavaScript
 - `functions/menus.php`
 	- Register navigation menus
 - `functions/template-tags.php`
