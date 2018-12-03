@@ -17,15 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Security
 -->
 
-## 1.0.0 - 2018-12-XX - Initial Release
-
-### Added
-- Add WordPress functions
-
-## 0.0.1 - 2018-12-03 - Create repo
+## 1.0.0 - 2018-12-03 - Initial Release
 
 ### Added
 - Add `CHANGELOG.MD`
 - Add `CODE_OF_CONDUCT.md`
 - Add `LICENSE`
 - Add `README.md`
+- Add WordPress functions

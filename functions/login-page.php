@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_update_login_style' ) ) :
 
 /**
-	* Add custom login CSS and JavaScript
+	* Adds custom login CSS and JavaScript
 	*/
 function wordpress_theme_update_login_style() {
 
@@ -26,7 +26,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_update_login_title' ) ) :
 
 /**
-	* Update Login H1 title
+	* Updates Login H1 title
 	*/
 function wordpress_theme_update_login_title() {
 	return get_bloginfo( 'name' );
@@ -38,7 +38,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_update_login_title_link_url' ) ) :
 
 /**
-	* Update Login H1 title hyperlink URL
+	* Updates Login H1 title hyperlink URL
 	*/
 function wordpress_theme_update_login_title_link_url() {
 	return home_url();

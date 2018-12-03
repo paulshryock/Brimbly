@@ -7,7 +7,7 @@
 if ( ! function_exists( 'wordpress_theme_the_template_tag' ) ) :
 
 /**
-	* Echos the template tag
+	* Echos a template tag
 	*/
 function wordpress_theme_the_template_tag() {
 	$template_tag = '';

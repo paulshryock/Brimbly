@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_scripts' ) ) :
 
 /**
-	* Add stylesheets and scripts
+	* Adds stylesheets and scripts
 	*/
 function wordpress_theme_scripts() {
 	
@@ -31,7 +31,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_add_async_attribute' ) ) :
 
 /**
-	* Add async attribute
+	* Adds async attribute
 	*/
 function wordpress_theme_add_async_attribute($tag, $handle) {
 	if ( /* Something that shouldn't be async */ == $handle ) {
@@ -46,7 +46,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_remove_cssjs_ver' ) ) :
 
 /**
-	* Remove query string from static resources 
+	* Removes query string from static resources
 	*/
 function wordpress_theme_remove_cssjs_ver( $src ) {
 	if ( strpos( $src, '?ver=' ) )
@@ -61,7 +61,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_remove_emojicons' ) ) :
 
 /**
-	* Remove Emojicons
+	* Removes Emojicons
 	*/
 function wordpress_theme_remove_emojicons() {
     remove_action( 'admin_print_styles', 'print_emoji_styles' );
@@ -85,7 +85,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_update_body_class' ) ) :
 
 /**
-	* Update body_class
+	* Updates body_class
 	*/
 function wordpress_theme_update_body_class( $classes ) {
 	return array_merge( $classes, array(

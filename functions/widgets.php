@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_remove_widget_titles' ) ) :
 
 /**
-	* Remove widget titles
+	* Removes widget titles
 	*
 	*/
 function wordpress_theme_remove_widget_titles($t) {
@@ -21,7 +21,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_widgets_init' ) ) :
 
 /**
-	* Register widget area(s)
+	* Registers widget area(s)
 	*
 	* @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
 	*/

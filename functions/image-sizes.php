@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_update_default_image_sizes' ) ) :
 
 /**
-	* Update default image sizes
+	* Updates default image sizes
 	*/
 function wordpress_theme_update_default_image_sizes() {
 
@@ -50,7 +50,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_add_custom_image_sizes' ) ) :
 
 /**
-	* Add custom image sizes
+	* Adds custom image sizes
 	*/
 function wordpress_theme_add_custom_image_sizes() {
 
@@ -70,7 +70,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_add_custom_image_size_names' ) ) :
 
 /**
-	* Add custom image size names for use in Add Media modal
+	* Adds custom image size names for use in Add Media modal
 	*/
 function wordpress_theme_add_custom_image_size_names( $sizes ) {
 	

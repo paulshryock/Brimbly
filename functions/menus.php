@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_register_menus' ) ) :
 
 /** 
-	* Register navigation menus
+	* Registers navigation menu(s)
 	*/
 function wordpress_theme_register_menus() {
 	register_nav_menu( 'primary-navigation', __( 'Primary Navigation', 'wordpress-theme' ) );

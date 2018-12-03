@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_update_excerpt_length' ) ) :
 
 /**
-	* Update excerpt length
+	* Updates excerpt length
 	*/
 function wordpress_theme_update_excerpt_length( $length ) {
 	return 25;
@@ -20,7 +20,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_update_read_more_link' ) ) :
 
 /**
-	* Update Read More link markup
+	* Updates Read More link markup
 	*/
 function wordpress_theme_update_read_more_link() {
 	return '<a href="' . get_permalink() . '">Read More</a>';
@@ -32,7 +32,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_update_more_excerpt' ) ) :
 
 /**
-	* Update More excerpt
+	* Updates More excerpt
 	*/
 function wordpress_theme_update_more_excerpt( $more ) {
 	return '...';
@@ -44,7 +44,7 @@ endif;
 if ( ! function_exists( 'wordpress_theme_lead_paragraph_class' ) ) :
 
 /**
-	* Add lead class to first paragraph
+	* Adds lead class to first paragraph
 	*/
 function wordpress_theme_lead_paragraph_class( $content ) {
 	return preg_replace( '/<p([^>]+)?>/', '<p$1 class="lead">', $content, 1 );

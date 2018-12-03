@@ -9,6 +9,41 @@ Download or clone this repo<!--  and open `index.html` -->.
 $ git clone https://github.com/paulshryock/Brimbly Brimbly
 ```
 
+## WordPress Theme Functions
+
+The main `functions.php` file loads the following functions from the following files:
+
+- `functions/theme-setup.php`
+	- Add Theme Support
+- `functions/dependencies-and-meta.php`
+	- Add stylesheets and scripts
+	- Add async attribute
+	- Remove query string from static resources
+	- Remove Emojicons
+	- Update body_class
+- `functions/login-page.php`
+	- Add custom login CSS and JavaScript
+	- Update Login H1 title
+	- Update Login H1 title hyperlink URL
+- `functions/admin.php`
+	- Update Admin CSS
+- `functions/menus.php`
+	- Register navigation menus
+- `functions/template-tags.php`
+	- Echo a template tag
+- `functions/image-sizes.php`
+	- Update default image sizes
+	- Add custom image sizes
+	- Add custom image size names for use in Add Media modal
+- `functions/posts.php`
+	- Update excerpt length
+	- Update Read More link markup
+	- Update More excerpt
+	- Add lead class to first paragraph
+- `functions/widgets.php`
+	- Remove widget titles
+	- Register widget area(s)
+
 <!-- ## Roadmap -->
 
 ## Contributing
@@ -24,8 +59,8 @@ Working on your first Pull Request? You can learn how from this *free* series, [
 
 <!-- - Project homepage: https://paulshryock.github.io/Brimbly/ -->
 - Repository: https://github.com/paulshryock/Brimbly
-<!-- - Releases: -->
-	<!-- - [v1.0.0 - Initial release](https://github.com/paulshryock/Brimbly/releases/tag/v1.0.0) -->
+- Releases:
+	- [v1.0.0 - Initial release](https://github.com/paulshryock/Brimbly/releases/tag/v1.0.0)
 		<!-- - [v2.0.1 - XXXXXX](https://github.com/paulshryock/Brimbly/releases/tag/v2.0.1) -->
 		<!-- - [v2.0.2 - XXXXXX](https://github.com/paulshryock/Brimbly/releases/tag/v2.0.2) -->
 		<!-- - [v2.0.3 - XXXXXX](https://github.com/paulshryock/Brimbly/releases/tag/v2.0.3) -->

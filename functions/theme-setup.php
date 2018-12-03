@@ -8,14 +8,14 @@
 if ( ! function_exists( 'wordpress_theme_add_theme_support' ) ) :
 
 /**
-	* Add theme support
+	* Adds theme support
 	*/
 function wordpress_theme_add_theme_support() {
 	add_theme_support( 'title-tag' ); // Proper WordPress Titles
 	add_theme_support( 'post-thumbnails' ); // Featured images
 
 	/*
-	 * Switch default core markup for search form, comment form, and comments
+	 * Switches default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
 	 */
 	add_theme_support( 'html5', array(

@@ -8,7 +8,7 @@
 if ( ! function_exists( 'wordpress_theme_update_admin_style' ) ) :
 
 /**
-	* Update Admin CSS
+	* Updates Admin CSS
 	*/
 function wordpress_theme_update_admin_style($hook) {
 	wp_register_style( 'custom_wp_admin_css', get_template_directory_uri() . '/css/admin/admin-style.css' );
