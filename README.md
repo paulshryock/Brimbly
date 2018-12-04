@@ -44,7 +44,11 @@ The main `functions.php` file loads the following functions from the following f
 	- Remove widget titles
 	- Register widget area(s)
 
-<!-- ## Roadmap -->
+## Roadmap
+- Add `wp-config.php`
+- Add `.htaccess`
+- Add `index.php`
+- Add any other usual server configuration
 
 ## Contributing
 
