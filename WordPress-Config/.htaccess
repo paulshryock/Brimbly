@@ -1,0 +1,63 @@
+# ----------------------------------------------------------------------
+# | WordPress                                                          |
+# ----------------------------------------------------------------------
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+# ----------------------------------------------------------------------
+# | SSL                                                                |
+# ----------------------------------------------------------------------
+
+# TODO: Verify if this is correct, or needs updating
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+</IfModule>
+
+# ----------------------------------------------------------------------
+# | PHP Enable HTTP Authorization Header                               |
+# ----------------------------------------------------------------------
+
+# TODO: Verify if this is relevant & correct, or needs updating/removal
+
+RewriteEngine on
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+
+# ----------------------------------------------------------------------
+# | Redirect /cms to /                                                 |
+# ----------------------------------------------------------------------
+
+# TODO: Verify RedirectMatch syntax
+# Should `/` be replaced with a variable that represents the site url?
+
+RedirectMatch 301 ^/cms/$ /
+RedirectMatch 301 ^/cpanel/$ /
+
+# ----------------------------------------------------------------------
+# | File access                                                        |
+# ----------------------------------------------------------------------
+
+# TODO: Verify if this should happen at the server or site level
+# TODO: Verify if this is most appropriate method and correct
+
+# Block access to directories without a default document.
+#
+# You should leave the following uncommented, as you shouldn't allow
+# anyone to surf through every directory on your server (which may
+# includes rather private places such as the CMS's directories).
+
+<IfModule mod_autoindex.c>
+	Options -Indexes
+</IfModule>
